@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Calculate Similar Words</title>
+</head>
+<body>
+<form action="#" th:action="@{/calculate}" th:object="${notebook}" method="post">
+    <p>Notebook Entry: <input type="text" th:field="*{notebook_entry}" /></p>
+    <p>Keyword: <input type="text" th:field="*{keyword}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
